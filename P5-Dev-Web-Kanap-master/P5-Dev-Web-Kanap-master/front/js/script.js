@@ -1,5 +1,6 @@
 async function startPage(){
     const list = await getAllProducts();
+    console.log(list)
     let html = "";
     list.forEach(produit => {
         html += `<a href="./product.html?id=${produit._id}">
